@@ -1,5 +1,7 @@
 nav.desktop {
   display: inline;
+  text-align: center;
+  align-content: center;
 
   ul {
     display: flex;

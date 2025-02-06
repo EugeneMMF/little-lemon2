@@ -53,6 +53,6 @@ export default function Rating({ props }) {
   useEffect(() => drawStars(), [ref]);
 
   return (
-    <canvas width={props.width} height={props.height} ref={ref}></canvas>
+    <canvas className='rating' width={props.width} height={props.height} ref={ref}></canvas>
   )
 }

@@ -34,4 +34,8 @@ article.testimony-card {
     text-align: left;
     margin: 10px;
   }
+
+  .rating {
+    margin: auto 10px;
+  }
 }

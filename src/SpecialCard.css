@@ -38,6 +38,7 @@ article.special-card {
     grid-row: 3/span 1;
     padding: 16px;
     margin: 0;
+    text-align: left;
   }
 
   a {

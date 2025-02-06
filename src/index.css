@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -28,14 +33,6 @@ div#root {
     grid-template-rows: auto repeat(20, 0fr) auto;
     margin: 0 5px;
     gap: 0;
-
-    * {
-      margin: 0 5px;
-
-      * {
-        margin: 0;
-      }
-    }
   }
 }
 
