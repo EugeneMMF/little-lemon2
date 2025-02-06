@@ -7,7 +7,7 @@ export default function About() {
     <section className='about-section'>
       <div className='grid-adjustable-columns'>
         <article>
-          <h2 className='display-title'>Little Lemon</h2>
+          <h2 className='display-title text-primary-green'>Little Lemon</h2>
           <h3 className='sub-title'>Chicago</h3>
           <p className='lead-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor tortor sed placerat.   Curabitur dapibus nulla justo, eu pellentesque diam  tincidunt eu.</p>
         </article>
