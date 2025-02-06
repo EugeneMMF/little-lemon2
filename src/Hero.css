@@ -1,0 +1,47 @@
+section.hero-section {
+  div {
+    padding: 50px 0;
+  }
+
+  article {
+    grid-column: span 6;
+    grid-row: auto;
+  }
+
+  img {
+    width: min(420px, 45vw);
+    border-radius: 16px;
+    display: inline;
+    grid-column: span 4;
+    grid-row: auto;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    margin-top: 10px;
+    grid-column: span 12;
+    grid-row: auto;
+  }
+
+  @media (min-width: 701px) {
+    img {
+      position: absolute;
+      left: 52%;
+    }
+
+    button {
+      margin-top: 150px;
+    }
+  }
+}

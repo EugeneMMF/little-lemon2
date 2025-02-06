@@ -1,0 +1,40 @@
+section.about-section {
+  div.grid-adjustable-columns {
+    padding: 50px 0;
+  }
+
+  article {
+    grid-column: span 6;
+    grid-row: auto;
+  }
+
+  div.image-combination {
+    width: 400px;
+    height: 600px;
+    border-radius: 16px;
+    display: inline;
+    grid-column: span 6;
+    grid-row: auto;
+  }
+
+  .side-image {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+
+    &.left {
+      position: relative;
+      top: 200px;
+    }
+
+    &.right {
+      position: relative;
+      top: -400px;
+      left: 150px;
+    }
+  }
+
+  h2, h3, p {
+    margin: 0;
+  }
+}

@@ -11,3 +11,186 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div#root {
+  display: grid;
+  grid-template-rows: 60px auto 0fr;
+  grid-template-columns: auto;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+@media (max-width: 700px) {
+  .grid-adjustable-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(20, 0fr) auto;
+    margin: 0 5px;
+    gap: 0;
+
+    * {
+      margin: 0 5px;
+
+      * {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) {
+  .grid-adjustable-columns {
+    max-width: min(1000px, 80rem);
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 1em;
+  }
+}
+
+
+/* Text Colors */
+
+.text-primary-green {
+  color: #495e57;
+}
+
+.text-primary-yellow {
+  color: #f4ce14;
+}
+
+.text-secondary-orange {
+  color: #ee9972;
+}
+
+.text-secondary-teal {
+  color: #fbdabb;
+}
+
+.text-secondary-light {
+  color: #edefee;
+}
+
+.text-secondary-dark {
+  color: #333333;
+}
+
+/* Background Colors */
+
+.back-primary-green {
+  background-color: #495e57;
+}
+
+.back-primary-yellow {
+  background-color: #f4ce14;
+}
+
+.back-secondary-orange {
+  background-color: #ee9972;
+}
+
+.back-secondary-teal {
+  background-color: #fbdabb;
+}
+
+.back-secondary-light {
+  background-color: #edefee;
+}
+
+.back-secondary-dark {
+  background-color: #333333;
+}
+
+/* Fonts */
+
+/*
+Font Weights
+------------
+Ultra Light: 200
+Light: 300
+Normal: 400
+Medium: 500
+Semi Bold: 600
+Bold: 700
+Extra Bold: 800
+*/
+
+.display-title {
+  font-family: 'Markazi Text';
+  font-weight: 500;
+  font-size: 64pt;
+}
+
+.sub-title {
+  font-family: 'Markazi Text';
+  font-weight: 400;
+  font-size: 40pt;
+}
+
+.lead-text {
+  font-family: 'Karla';
+  font-size: 18pt;
+  font-weight: 500;
+}
+
+.navbar {
+  font-family: 'Karla';
+  font-size: 14pt;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: 'Karla';
+  font-size: 20pt;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-category {
+  font-family: 'Karla';
+  font-size: 16pt;
+  font-weight: 800;
+}
+
+.card-title {
+  font-family: 'Karla';
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+.paragraph-text {
+  font-family: 'Karla';
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.5em;
+  max-inline-size: 65em;
+}
+
+.highlight-text {
+  font-family: 'Karla';
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+/* Special features */
+
+.call-to-action {
+  border-radius: 16px;
+  height: 55px;
+  width: 200px;
+  color: black;
+  font-family: 'Karla';
+  font-size: 18pt;
+  font-weight: 500;
+  border: solid black 2px;
+  box-shadow: black;
+  background-color: #f4ce14;
+}
+
+section {
+  width: 100%;
+}

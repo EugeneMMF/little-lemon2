@@ -1,0 +1,22 @@
+footer {
+  div.grid-adjustable-columns {
+    padding: 50px 0;
+  }
+
+  img, address, nav {
+    grid-column: span 3;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-transform: none;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,37 @@
+article.testimony-card {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  border-radius: 16px;
+  padding: 16px;
+
+  .image-frame {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    border-radius: 5px;
+    width: min(100px, 40vw);
+    height: min(100px, 25vh);
+    object-fit: contain;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  img {
+    width: min(100px, 40vw);
+    height: min(100px, 25vh);
+    object-fit: cover;
+  }
+
+  p.testimony-name {
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+    margin: auto 10px;
+  }
+
+  p.testimony-review {
+    grid-column: 1/span 3;
+    grid-row: 3/span 1;
+    text-align: left;
+    margin: 10px;
+  }
+}
