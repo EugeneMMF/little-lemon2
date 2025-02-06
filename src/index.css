@@ -187,6 +187,16 @@ Extra Bold: 800
   box-shadow: black;
   background-color: #f4ce14;
 
+  &.disabled {
+    background-color: #ee9972;
+
+    &:hover {
+      background-color: #ee9972;
+      color: black;
+      border-color: black;
+    }
+  }
+
   &:hover {
     background-color: #495e57;
     color: #edefee;

@@ -1,0 +1,5 @@
+.booking-section {
+  form {
+    grid-column: span 12;
+  }
+}
