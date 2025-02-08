@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 export default function Rating({ props }) {
   const ref = useRef(null);
 
-  const drawStars = () => {
+  useEffect(() => {
     const canvas = ref.current;
     if (!ref.current) return;
     let context = canvas.getContext('2d');
@@ -27,14 +27,14 @@ export default function Rating({ props }) {
         let x;
         let y;
         let angleRadians = angle*Math.PI/180;
-        if ((j%2) == 0) {
+        if ((j%2) === 0) {
           x = Math.floor(innerRadius * Math.cos(angleRadians) + positionX);
           y = Math.floor(innerRadius * Math.sin(angleRadians) + positionY);
         } else {
           x = Math.floor(outerRadius * Math.cos(angleRadians) + positionX);
           y = Math.floor(outerRadius * Math.sin(angleRadians) + positionY);
         }
-        if (j == 0) {
+        if (j === 0) {
           context.moveTo(x,y);
         } else {
           context.lineTo(x,y);
@@ -48,9 +48,7 @@ export default function Rating({ props }) {
       }
       positionX += value;
     }
-  }
-
-  useEffect(() => drawStars(), [ref]);
+  }, [ref, props]);
 
   return (
     <canvas className='rating' width={props.width} height={props.height} ref={ref}></canvas>

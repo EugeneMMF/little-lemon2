@@ -4,7 +4,7 @@ import hamburger from './images/🦆 icon _hamburger menu.svg';
 import { Link } from 'react-router-dom';
 
 export default function Nav() {
-    const [ loggedIn, setLoggedIn ] = useState(false);
+    const [ loggedIn ] = useState(false);
     const list = useRef(null);
 
     const openCloseMenu = useCallback(() => {

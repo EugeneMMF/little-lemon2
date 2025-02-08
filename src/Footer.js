@@ -20,17 +20,17 @@ export default function Footer() {
                 <address>
                     <h3 className='card-title text-secondary-light'>Contacts</h3>
                     <ul>
-                    <li><a href="" className="paragraph-text text-secondary-light">Address</a></li>
-                    <li><a href="" className="paragraph-text text-secondary-light">Phone number</a></li>
-                    <li><a href="" className="paragraph-text text-secondary-light">Email</a></li>
+                    <li><a href="/" className="paragraph-text text-secondary-light">Address</a></li>
+                    <li><a href="/" className="paragraph-text text-secondary-light">Phone number</a></li>
+                    <li><a href="/" className="paragraph-text text-secondary-light">Email</a></li>
                     </ul>
                 </address>
                 <address>
                     <h3 className='card-title text-secondary-light'>Social Media Links</h3>
                     <ul>
-                    <li><a href="" className="paragraph-text text-secondary-light">FaceBook</a></li>
-                    <li><a href="" className="paragraph-text text-secondary-light">Twitter</a></li>
-                    <li><a href="" className="paragraph-text text-secondary-light">Instagram</a></li>
+                    <li><a href="/" className="paragraph-text text-secondary-light">FaceBook</a></li>
+                    <li><a href="/" className="paragraph-text text-secondary-light">Twitter</a></li>
+                    <li><a href="/" className="paragraph-text text-secondary-light">Instagram</a></li>
                     </ul>
                 </address>
             </div>
