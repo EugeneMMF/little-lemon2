@@ -33,7 +33,7 @@ export default function Testimonials() {
     <section className='testimonials-section back-primary-green'>
       <div className='grid-adjustable-columns'>
         <h2 className="sub-title text-secondary-light">Testimonials</h2>
-        { testimonies.map(testimony => <TestimonyCard props={{...testimony}}/>) }
+        { testimonies.map(testimony => <TestimonyCard props={{...testimony}} key={testimony.name}/>) }
       </div>
     </section>
   )

@@ -1,5 +1,5 @@
 export default function BookingForm({props}) {
-  const { date, time, guests, occasion, availableTimes, setDate, setTime, setGuests, setOccasion } = props;
+  const { date, time, guests, occasion, availableTimes, dispatchAvailableTimes, setDate, setTime, setGuests, setOccasion } = props;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -9,7 +9,10 @@ export default function BookingForm({props}) {
   return (
     <form style={{display: 'grid', maxWidth: '200px', gap: '20px'}}onSubmit={ (e) => handleSubmit(e) }>
       <label htmlFor="res-date">Choose Date</label>
-      <input type="date" id="res-date" value={date} onChange={(e) => setDate(e.target.value)} required={true} />
+      <input type="date" id="res-date" value={date} onChange={(e) => {
+          setDate(e.target.value);
+          dispatchAvailableTimes({date: e.target.value});
+        }} required={true} />
       <label htmlFor="res-time">Choose Time</label>
       <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
         { availableTimes.map(option => <option value={option} key={option}>{option}</option>) }

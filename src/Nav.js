@@ -40,15 +40,15 @@ export default function Nav() {
             <img src={hamburger} className='navbar hamburger' onClick={openCloseMenu} alt='hamburger navigation icon'></img>
             <nav className="navbar phone" ref={list} onClick={closeMenu}>
                 <ul>
-                    <li><Link className="navbar text-secondary-dark" onclick={closeMenu} to="/home">Home</Link></li>
-                    <li><Link className="navbar text-secondary-dark" onclick={closeMenu} to="/about">About</Link></li>
-                    <li><Link className="navbar text-secondary-dark" onclick={closeMenu} to="/menu">Menu</Link></li>
-                    <li><Link className="navbar text-secondary-dark" onclick={closeMenu} to="/reservations">Reservations</Link></li>
-                    <li><Link className="navbar text-secondary-dark" onclick={closeMenu} to="/orderOnline">Order Online</Link></li>
+                    <li><Link className="navbar text-secondary-dark" onClick={closeMenu} to="/home">Home</Link></li>
+                    <li><Link className="navbar text-secondary-dark" onClick={closeMenu} to="/about">About</Link></li>
+                    <li><Link className="navbar text-secondary-dark" onClick={closeMenu} to="/menu">Menu</Link></li>
+                    <li><Link className="navbar text-secondary-dark" onClick={closeMenu} to="/reservations">Reservations</Link></li>
+                    <li><Link className="navbar text-secondary-dark" onClick={closeMenu} to="/orderOnline">Order Online</Link></li>
                     {
                         loggedIn ?
-                        <li><Link className="navbar text-secondary-dark" onclick={closeMenu} to="/logout">Logout</Link></li> :
-                        <li><Link className="navbar text-secondary-dark" onclick={closeMenu} to="/login">Login</Link></li>
+                        <li><Link className="navbar text-secondary-dark" onClick={closeMenu} to="/logout">Logout</Link></li> :
+                        <li><Link className="navbar text-secondary-dark" onClick={closeMenu} to="/login">Login</Link></li>
                     }
                 </ul>
             </nav>

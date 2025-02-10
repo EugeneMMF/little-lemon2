@@ -43,7 +43,6 @@ export default function Rating({ props }) {
         angle += 36;
       }
       if (i<level) {
-        console.log("filling");
         context.fill();
       }
       positionX += value;

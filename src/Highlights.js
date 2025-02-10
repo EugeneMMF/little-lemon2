@@ -27,7 +27,7 @@ export default function Highlights() {
     <section className="highlights-section grid-adjustable-columns">
       <h2 className="sub-title">Specials</h2>
       <button className="call-to-action">Online Menu</button>
-      { cards.map(card => <SpecialCard props={{...card}} />) }
+      { cards.map(card => <SpecialCard props={{...card}} key={card.title} />) }
     </section>
   )
 }
