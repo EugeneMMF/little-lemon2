@@ -1,9 +1,9 @@
 export default function BookingForm({props}) {
-  const { date, time, guests, occasion, availableTimes, dispatchAvailableTimes, setDate, setTime, setGuests, setOccasion } = props;
+  const { date, time, guests, occasion, availableTimes, dispatchAvailableTimes, setDate, setTime, setGuests, setOccasion, submitForm } = props;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(date, time, guests, occasion);
+    submitForm({date, time, guests, occasion});
   }
 
   return (

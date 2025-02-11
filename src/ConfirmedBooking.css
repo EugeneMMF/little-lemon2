@@ -1,9 +1,6 @@
-.booking-section {
+.confirmed-booking-section {
   grid-template-rows: repeat(10, 0fr);
-  h2 {
-    grid-column: span 12;
-  }
-  form {
+  h2, p {
     grid-column: span 12;
   }
 }

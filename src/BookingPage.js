@@ -10,6 +10,7 @@ export default function BookingPage({ props }) {
 
   return (
     <section className="booking-section grid-adjustable-columns">
+      <h2 className='sub-title center text-primary-green'>Book Now</h2>
       <BookingForm props={{...props, date, time, guests, occasion, setDate, setTime, setGuests, setOccasion}} />
     </section>
   )
