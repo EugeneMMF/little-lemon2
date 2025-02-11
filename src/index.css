@@ -178,7 +178,7 @@ Extra Bold: 800
 .call-to-action {
   border-radius: 16px;
   height: 55px;
-  width: 200px;
+  width: max(200px, 100%);
   color: black;
   font-family: 'Karla';
   font-size: 18pt;

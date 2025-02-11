@@ -1,0 +1,9 @@
+.booking-form {
+  width: min(100%, 300px);
+  span {
+    color: crimson;
+  }
+  .chakra-form-control {
+    padding: 10px 0 10px 0;
+  }
+}

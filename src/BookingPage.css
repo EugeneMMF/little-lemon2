@@ -1,9 +1,12 @@
 .booking-section {
   grid-template-rows: repeat(10, 0fr);
   h2 {
-    grid-column: span 12;
+    grid-column: span 11;
   }
-  form {
+  button {
+    grid-column: span 1;
+  }
+  .booking-form {
     grid-column: span 12;
   }
 }
