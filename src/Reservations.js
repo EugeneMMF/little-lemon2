@@ -18,7 +18,7 @@ const Reservations = ({ props }) => {
             <td className='paragraph-text'>{reservation.time}</td>
             <td className='paragraph-text'>{reservation.guests}</td>
             <td className='paragraph-text'>{reservation.occasion}</td>
-            <GiTrashCan className='call-to-action' onClick={() => props.dropReservation(index)}/>
+            <GiTrashCan className='call-to-action' aria-description='Deletes the reservation' aria-label='Delete Reservation' onClick={() => props.dropReservation(index)}/>
           </tr>)) }
         </tbody>
       </table>

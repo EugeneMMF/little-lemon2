@@ -17,8 +17,9 @@ section.reservations-section {
 
   .call-to-action {
     border-radius: 5px;
-    height: 25px;
-    width: 25px;
+    height: 1.2em;
+    width: 1.2em;
+    min-width: 0px;
     padding: 2px;
     color: red;
     border: solid black 2px;
