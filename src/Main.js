@@ -1,5 +1,5 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
-import { useReducer, useState } from "react";
+import { useReducer, useState, useEffect } from "react";
 import HomePage from "./HomePage";
 import About from "./About";
 import BookingPage from "./BookingPage";
@@ -9,6 +9,7 @@ import Reservations from "./Reservations";
 export default function Main() {
 
     const [reservations, setReservations] = useState([]);
+    const [formData, setFormData] = useState({});
 
     const seededRandom = function (seed) {
         var m = 2**35 - 31;
@@ -39,11 +40,16 @@ export default function Main() {
     };
 
     const submitForm = (formData) => {
+        setFormData(formData);
+    }
+
+    useEffect(() => {
+        if (Object.keys(formData).length == 0) return;
         if (submitAPI(formData)) {
             setReservations([...reservations, formData]);
             navigate('/submission-confirmed');
         }
-    }
+    }, [formData])
 
     const dropReservation = (index) => {
         setReservations([...reservations.slice(0, index), ...reservations.slice(index+1)])

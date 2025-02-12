@@ -12,7 +12,7 @@ export default function Hero() {
                     <p className='lead-text text-secondary-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida porttitor tortor sed placerat.   Curabitur dapibus nulla justo, eu pellentesque diam  tincidunt eu.</p>
                 </article>
                 <img className='side-image' src={restaurantFood} alt="restaurant food" />
-                <button className='call-to-action'><Link to='/make-reservation'>Reserve a Table</Link></button>
+                <Link to='/make-reservation' className='call-to-action'>Reserve a Table</Link>
             </div>
         </section>
     )

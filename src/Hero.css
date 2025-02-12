@@ -28,8 +28,8 @@ section.hero-section {
     margin: 0;
   }
 
-  button {
-    margin-top: 10px;
+  a {
+    margin-top: 60px;
     grid-column: span 12;
     grid-row: auto;
   }

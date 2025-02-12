@@ -178,7 +178,8 @@ Extra Bold: 800
 .call-to-action {
   border-radius: 16px;
   height: 55px;
-  width: max(200px, 100%);
+  width: min-content;
+  min-width: 200px;
   color: black;
   font-family: 'Karla';
   font-size: 18pt;
@@ -186,6 +187,8 @@ Extra Bold: 800
   border: solid black 2px;
   box-shadow: black;
   background-color: #f4ce14;
+  padding: 10px;
+  text-align: center;
 
   &.disabled {
     background-color: #ee9972;
